@@ -1,0 +1,18 @@
+
+
+Ejercicio 2 :
+
+- ¿Pueden el padre y el hijo acceder al file descriptor retornado por open()?
+    R// Si, debido luego de utilizar una función fork() intentamos acceder al file descriptor y en ambos casos se pudo hacer
+    uso de el, lo que significa que el alcance de "fd" es para padre e hijo.
+
+- ¿Qué pasa si ellos empiezan a escribir el archivo de manera concurrente, es decir, a la misma vez?
+    R// Se puso a prueba la escritura dentro del archivo con un ciclo "for", y no presentó ningún problema
+    por lo tanto, no hay incoveniente.
+
+Ejercicio 4:
+- ¿Por qué piensa usted que existen tantas variaciones para la misma llamada básica?
+    R// Las variaciones que tiene la llamada exec() existen para cuando se desconocen los argumentos, o variables, o por el contrario
+    si se necesita algún argumento o variable, existe una variación que nos permite esto.
+
+    
