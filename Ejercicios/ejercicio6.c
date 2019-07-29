@@ -24,13 +24,14 @@ int main()
     
         if (fork() == 0)
         {   
-            int cpid = wait(NULL); 
+             
             printf("Empezando proceso hijo %d\n", getpid());
             write(fd[0], "Escribiendo desde el hijo\n", strlen("Escribiendo desde el hijo\n"));
         }
         else
         {
-            
+            int cpid = waitpid(NULL);
+            printf("waitpid %d\n", cpid);
             printf("Empezando proceso padre %d\n", getpid());
 
             write(fd[0], "Escribiendo desde el padre\n", strlen("Escribiendo desde el padre\n"));
