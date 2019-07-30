@@ -42,7 +42,7 @@ Ejercicio 6:
     R// cuando estamos manejando una gran cantidad de hijos y queremos obtener el estado de cada uno de ellos, esta función
     nos da una mayor variedad de estados que nos permiten tener más información.
 
-Ejercicio 6:
+Ejercicio 7:
 -¿Qué pasa si el hijo llama printf() para imprimir alguna salida después de cerrar el descriptor?
     R//Al cerrar la salida estandar en el proceso hijo y posterior a este llamar un printf(), entonces el resultado 
     es que no se genera la salida.
